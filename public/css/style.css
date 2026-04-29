@@ -1098,12 +1098,14 @@ input[type="range"] {
 }
 
 .promo input {
+  width: 100%;
   padding: 8px;
   border: 1px solid black;
   border-radius: 10px;
 }
 
 .promo button {
+  width: 100%;
   padding: 9px 15px;
   border: none;
   border-radius: 10px;
