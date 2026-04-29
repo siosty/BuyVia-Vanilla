@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Account | Spendless, Smile More</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="headBar">
+        <div class="logo">
+          <p>BUY<span>VIA</span></p>
+        </div>
+        <div class="menuBar" style="visibility: hidden">
+          <i class="fa-solid fa-bars" style="color: black; font-size: 25px"></i>
+        </div>
+        <div class="search">
+          <div class="search-Box">
+            <input type="search" placeholder="Search here....." />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <div class="shopIcons">
+          <div class="iconsWrap">
+            <div class="wishIcon">
+              <a></a>
+              <i class="fa-regular fa-heart"></i>
+              <div class="countWrap">
+                <span id="wishCount">0</span>
+              </div>
+            </div>
+            <div class="cartIcon">
+              <a href="/cart.html" style="text-decoration: none"
+                ><i class="fa-solid fa-basket-shopping"></i
+              ></a>
+
+              <div class="countWrap">
+                <span id="cartCount">0</span>
+              </div>
+            </div>
+            <div class="profileDiv">
+              <button onclick="window.location = 'profile.html'" id="signBtn">
+                Sign in
+              </button>
+              <div class="pfpIconCont" id="pfpCircle">
+                <img onclick="window.location = 'profile.html'" src="" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navBar">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/product.html">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+    </header>
+    <div id="toast-container"></div>
+    <main style="padding: 20px">
+      <section class="titleSec" style="margin-top: 15px">
+        <h1>My Account</h1>
+        <p>This is a my account page</p>
+      </section>
+      <hr />
+      <section class="profileCont">
+        <div class="signInCont">
+          <h2>Welcome Back!</h2>
+          <p>
+            Sign in to continue with
+            <span style="color: purple; font-weight: 500">BuyVia</span>
+          </p>
+          <form novalidate id="signinForm">
+            <label for="logemail"
+              >Email :
+              <input type="email" placeholder="Enter your email" id="logemail"
+            /></label>
+            <label for="logpassword"
+              >Password :
+              <input
+                type="password"
+                placeholder="Enter your password"
+                id="logpassword"
+            /></label>
+            <div class="forgotPasswordCont">
+              <div class="rememberMe">
+                <input type="checkbox" checked />
+                <p>Remember Me</p>
+              </div>
+              <a href="#">Forgot password?</a>
+            </div>
+            <button id="loginBtn" type="submit">Sign In</button>
+            <div class="divider">
+              <hr />
+              <span>Or continue with</span>
+            </div>
+            <div class="otherCont">
+              <button id="google">
+                <img
+                  src="/images/google.png"
+                  alt="google logo icon"
+                  width="16px"
+                />
+                Continue with Google
+              </button>
+              <button id="apple">
+                <img
+                  src="/images/apple.png"
+                  alt="google logo icon"
+                  width="16px"
+                />Continue with Apple
+              </button>
+            </div>
+            <p>
+              Don't have an account?
+              <span id="signUpBtn" style="color: purple; font-weight: 500"
+                >Sign Up</span
+              >
+            </p>
+          </form>
+        </div>
+        <div class="myProfileCont">
+          <div class="pfpCont">
+            <div class="pfpImgCont">
+              <img
+                id="pfp"
+                src="/images/user1.jpg"
+                alt="user1 pfp"
+                width="80px"
+              />
+            </div>
+            <div class="pageTitleCont">
+              <h2>User Details</h2>
+              <p>View your account information</p>
+            </div>
+          </div>
+          <div class="divider">
+            <hr style="width: 100%; margin: 0 auto" />
+          </div>
+          <div class="pfpDetails">
+            <table class="userDetails">
+              <tr>
+                <th>Full Name</th>
+                <td id="fullName">John Doe</td>
+              </tr>
+              <tr>
+                <th>Email</th>
+                <td id="email">john@doe.com</td>
+              </tr>
+              <tr>
+                <th>Phone Number</th>
+                <td id="phoneNumber">+1 234 567 8952</td>
+              </tr>
+              <tr>
+                <th>Address</th>
+                <td>123 Main St. Somewhere</td>
+              </tr>
+              <tr>
+                <th>Member Since</th>
+                <td>June 8, 2000</td>
+              </tr>
+            </table>
+            <div class="signOutCont">
+              <button id="logout">Sign Out</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="aboutFoot">
+        <h3>Buy<span>Via</span></h3>
+        <p>
+          BuyVia is your onestop shop for quality products at the best prices.
+          <br />
+          Shop Smart, Live Better
+        </p>
+        <div class="social-icons">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      <div class="quickAccess">
+        <div class="company">
+          <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Career</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <div class="shop">
+          <ul>
+            <li>Shop</li>
+            <li>All Products</li>
+            <li>Categories</li>
+            <li>Deals</li>
+            <li>New Arrivals</li>
+          </ul>
+        </div>
+        <div class="help">
+          <ul>
+            <li>Help</li>
+            <li>FAQ</li>
+            <li>Shipping</li>
+            <li>Returns</li>
+            <li>Track Order</li>
+          </ul>
+        </div>
+        <div class="legal">
+          <ul>
+            <li>Legal</li>
+            <li>Privacy Policy</li>
+            <li>Terms of Use</li>
+            <li>Refund Policy</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/js/profile.js"></script>
+  </body>
+</html>

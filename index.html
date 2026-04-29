@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BuyVia | Spendless, Smile More</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="headBar">
+        <div class="logo">
+          <p>BUY<span>VIA</span></p>
+        </div>
+        <div class="menuBar" style="visibility: hidden">
+          <i class="fa-solid fa-bars" style="color: black; font-size: 25px"></i>
+        </div>
+        <div class="search">
+          <div class="search-Box">
+            <input type="search" placeholder="Search here....." />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <div class="shopIcons">
+          <div class="iconsWrap">
+            <div class="wishIcon">
+              <a></a>
+              <i class="fa-regular fa-heart"></i>
+              <div class="countWrap">
+                <span id="wishCount">0</span>
+              </div>
+            </div>
+            <div class="cartIcon">
+              <a href="/cart.html" style="text-decoration: none"
+                ><i class="fa-solid fa-basket-shopping"></i
+              ></a>
+
+              <div class="countWrap">
+                <span id="cartCount">0</span>
+              </div>
+            </div>
+            <div class="profileDiv">
+              <button onclick="window.location = 'profile.html'" id="signBtn">
+                Sign in
+              </button>
+              <div class="pfpIconCont" id="pfpCircle" style="display: none">
+                <img
+                  onclick="window.location = 'profile.html'"
+                  src="/images/user2.jpg"
+                  alt=""
+                  style="cursor: pointer"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navBar">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/product.html">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+    </header>
+    <div id="toast-container"></div>
+    <main>
+      <section class="hero">
+        <div class="heroCont">
+          <div class="leftHero">
+            <p data-aos="fade-down">Best Deals Onile</p>
+            <h2 data-aos="fade-down">
+              Shop Smarter With <span style="color: purple">BuyVia</span>
+            </h2>
+            <p data-aos="fade-up">
+              Discover top deals on electronics, fashion, home appliance and
+              more
+            </p>
+            <div class="leftButtons" data-aos="fade-up">
+              <button id="Shop">Shop Now</button>
+              <button id="Explore">Expolore Deals</button>
+            </div>
+          </div>
+          <div class="rightHero">
+            <div class="bgimgCont" data-aos="fade-left">
+              <img
+                src="/images/bg-women1.png"
+                alt="a women in a white t-shirt"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="divider">
+        <hr />
+        <h3>Shop By Category</h3>
+      </div>
+      <section class="category">
+        <div class="categoryCont">
+          <div class="categoryCard" data-aos="fade-up">
+            <div class="categoryImgCont">
+              <img src="/images/category1.png" alt="" />
+            </div>
+            <p>Electronics</p>
+          </div>
+          <div class="categoryCard" data-aos="fade-down">
+            <div class="categoryImgCont">
+              <img src="/images/category2.png" alt="" />
+            </div>
+            <p>Fitness</p>
+          </div>
+          <div class="categoryCard" data-aos="fade-up">
+            <div class="categoryImgCont">
+              <img src="/images/category3.png" alt="" />
+            </div>
+            <p>Home</p>
+          </div>
+          <div class="categoryCard" data-aos="fade-down">
+            <div class="categoryImgCont">
+              <img src="/images/category4.png" alt="" />
+            </div>
+            <p>Stationary</p>
+          </div>
+          <div class="categoryCard" data-aos="fade-up">
+            <div class="categoryImgCont">
+              <img src="/images/category5.png" alt="" />
+            </div>
+            <p>Accessories</p>
+          </div>
+        </div>
+      </section>
+      <div class="divider">
+        <hr />
+        <h3>Featured Products</h3>
+      </div>
+      <section class="featured">
+        <div class="featuredCont" data-aos="fade-up">
+          <!-- Dynamically Filled With JS -->
+        </div>
+      </section>
+      <div class="saleBanner">
+        <div class="promoTextCont">
+          <p>🔥50% OFF</p>
+          <p>On Premium Headphones</p>
+          <p>Limited time offer. Grab yours now</p>
+        </div>
+        <div class="countDownCont">
+          <div class="days">
+            <span>00</span>
+            <p style="font-size: 14px; font-weight: normal">Days</p>
+          </div>
+          <span>:</span>
+          <div class="hours">
+            <span>00</span>
+            <p style="font-size: 14px; font-weight: normal">Hours</p>
+          </div>
+          <span>:</span>
+          <div class="minutes">
+            <span>00</span>
+            <p style="font-size: 14px; font-weight: normal">Minutes</p>
+          </div>
+          <span>:</span>
+          <div class="seconds">
+            <span>00</span>
+            <p style="font-size: 14px; font-weight: normal">Seconds</p>
+          </div>
+        </div>
+        <button>Shop Now</button>
+      </div>
+      <div class="divider">
+        <hr />
+        <h3>New Arrivals</h3>
+      </div>
+      <section class="newArrival">
+        <div class="newArrivalCont">
+          <!-- Dynamically Filled With JS -->
+        </div>
+      </section>
+      <section class="services-section">
+        <div class="services">
+          <div class="serviceCard">
+            <div class="iCont">
+              <i class="fa-solid fa-truck"></i>
+            </div>
+            <div class="detail-Cont">
+              <p>Fast Delivery</p>
+              <p>Get your orders quickly</p>
+            </div>
+          </div>
+          <div class="serviceCard">
+            <div class="iCont">
+              <i class="fa-solid fa-credit-card"></i>
+            </div>
+            <div class="detail-Cont">
+              <p>Secure Payment</p>
+              <p>100% Safe & Secure</p>
+            </div>
+          </div>
+          <div class="serviceCard">
+            <div class="iCont">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <div class="detail-Cont">
+              <p>24/7 Support</p>
+              <p>We're here to help</p>
+            </div>
+          </div>
+          <div class="serviceCard">
+            <div class="iCont">
+              <i class="fa-solid fa-rotate-left"></i>
+            </div>
+            <div class="detail-Cont">
+              <p>Easy Returns</p>
+              <p>Hassle free returns</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="divider">
+        <hr />
+        <h3>From Our Blog</h3>
+      </div>
+      <section class="blog">
+        <div class="blogCont">
+          <div class="blogCard">
+            <div class="blogimgCont">
+              <img src="/images/blog1.jpg" alt="" />
+            </div>
+            <div class="blogDetailCont">
+              <p>This is the blog title</p>
+              <div class="bottomDetail">
+                <p>27 April, 2026</p>
+                <p>By Admin</p>
+              </div>
+            </div>
+          </div>
+          <div class="blogCard">
+            <div class="blogimgCont">
+              <img src="/images/blog2.webp" alt="" />
+            </div>
+            <div class="blogDetailCont">
+              <p>This is the blog title</p>
+              <div class="bottomDetail">
+                <p>27 April, 2026</p>
+                <p>By Admin</p>
+              </div>
+            </div>
+          </div>
+          <div class="blogCard">
+            <div class="blogimgCont">
+              <img src="/images/blog3.jpg" alt="" />
+            </div>
+            <div class="blogDetailCont">
+              <p>This is the blog title</p>
+              <div class="bottomDetail">
+                <p>27 April, 2026</p>
+                <p>By Admin</p>
+              </div>
+            </div>
+          </div>
+          <div class="blogCard">
+            <div class="blogimgCont">
+              <img src="/images/blog4.jpg" alt="" />
+            </div>
+            <div class="blogDetailCont">
+              <p>This is the blog title</p>
+              <div class="bottomDetail">
+                <p>27 April, 2026</p>
+                <p>By Admin</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="newsletter">
+        <div class="newsletterCont">
+          <div class="leftNews">
+            <p>Subscribe to Our Newsletter</p>
+            <p>Get the lates updates, deals, and more!</p>
+          </div>
+          <div class="rightNews">
+            <input type="email" placeholder="Enter your email" />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="aboutFoot">
+        <h3>Buy<span>Via</span></h3>
+        <p>
+          BuyVia is your onestop shop for quality products at the best prices.
+          <br />
+          Shop Smart, Live Better
+        </p>
+        <div class="social-icons">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      <div class="quickAccess">
+        <div class="company">
+          <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Career</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <div class="shop">
+          <ul>
+            <li>Shop</li>
+            <li>All Products</li>
+            <li>Categories</li>
+            <li>Deals</li>
+            <li>New Arrivals</li>
+          </ul>
+        </div>
+        <div class="help">
+          <ul>
+            <li>Help</li>
+            <li>FAQ</li>
+            <li>Shipping</li>
+            <li>Returns</li>
+            <li>Track Order</li>
+          </ul>
+        </div>
+        <div class="legal">
+          <ul>
+            <li>Legal</li>
+            <li>Privacy Policy</li>
+            <li>Terms of Use</li>
+            <li>Refund Policy</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script type="module" src="/js/script.js"></script>
+  </body>
+</html>

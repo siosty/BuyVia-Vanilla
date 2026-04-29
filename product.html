@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop | Spendless, Smile More</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="headBar">
+        <div class="logo">
+          <p>BUY<span>VIA</span></p>
+        </div>
+        <div class="menuBar" style="visibility: hidden">
+          <i class="fa-solid fa-bars" style="color: black; font-size: 25px"></i>
+        </div>
+        <div class="search">
+          <div class="search-Box">
+            <input type="search" placeholder="Search here....." />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <div class="shopIcons">
+          <div class="iconsWrap">
+            <div class="wishIcon">
+              <a></a>
+              <i class="fa-regular fa-heart"></i>
+              <div class="countWrap">
+                <span id="wishCount">0</span>
+              </div>
+            </div>
+            <div class="cartIcon">
+              <a href="/cart.html" style="text-decoration: none"
+                ><i class="fa-solid fa-basket-shopping"></i
+              ></a>
+
+              <div class="countWrap">
+                <span id="cartCount">0</span>
+              </div>
+            </div>
+            <div class="profileDiv">
+              <button onclick="window.location = '/profile.html'" id="signBtn">
+                Sign in
+              </button>
+              <div class="pfpIconCont" id="pfpCircle">
+                <img
+                  onclick="window.location = '/profile.html'"
+                  src=""
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navBar">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/product.html">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+    </header>
+    <div id="toast-container"></div>
+    <div class="shopContainer">
+      <div class="titleSec">
+        <h1>Shop</h1>
+        <p>Browse All Products</p>
+      </div>
+
+      <hr />
+      <div class="mainContainer">
+        <aside>
+          <h3 style="width: 100%; margin: 5px auto">Filter By</h3>
+          <hr style="width: 100%" />
+          <div class="sideSearch">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="search"
+              placeholder="Search for products....."
+              id="productSearch"
+            />
+          </div>
+          <div class="categorySelect">
+            <h4>Categories</h4>
+            <ul>
+              <li class="filterLists">
+                <input
+                  type="checkbox"
+                  id="electronicsCheck"
+                  class="categroyCheck"
+                />
+                <p>Electronics</p>
+              </li>
+              <li class="filterLists">
+                <input
+                  type="checkbox"
+                  id="fitnessCheck"
+                  class="categroyCheck"
+                />
+                <p>Fitness</p>
+              </li>
+              <li class="filterLists">
+                <input type="checkbox" id="homeCheck" class="categroyCheck" />
+                <p>Home</p>
+              </li>
+              <li class="filterLists">
+                <input
+                  type="checkbox"
+                  id="stationaryCheck"
+                  class="categroyCheck"
+                />
+                <p>Stationary</p>
+              </li>
+              <li class="filterLists">
+                <input
+                  type="checkbox"
+                  id="accessoriesCheck"
+                  class="categroyCheck"
+                />
+                <p>Accessories</p>
+              </li>
+            </ul>
+          </div>
+          <h4>Price Range</h4>
+          <div class="priceFilterCont">
+            <div class="priceInputCont">
+              <input type="text" readonly value="0" id="minPrice" />
+              <p>-</p>
+              <input type="text" readonly id="maxPrice" />
+            </div>
+            <input type="range" id="priceRange" max="500" min="0" value="500" />
+          </div>
+          <button id="clrFilter">Clear Filter</button>
+        </aside>
+        <main>
+          <div class="mainTopCont">
+            <p>Showing <span>12</span> of <span>50</span> products</p>
+            <div class="rightTop">
+              <p>Sort by :</p>
+              <select>
+                <option>Price : Low to High</option>
+                <option>Price : High to Low</option>
+              </select>
+            </div>
+          </div>
+          <div class="allProductsCont">
+            <!-- Dynamically Updated with products.js -->
+          </div>
+          <div class="paginationCont">
+            <button class="prev">Previous</button>
+            <div class="pageNumber">1</div>
+            <button class="next">Next</button>
+          </div>
+        </main>
+      </div>
+    </div>
+    <footer>
+      <div class="aboutFoot">
+        <h3>Buy<span>Via</span></h3>
+        <p>
+          BuyVia is your onestop shop for quality products at the best prices.
+          <br />
+          Shop Smart, Live Better
+        </p>
+        <div class="social-icons">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      <div class="quickAccess">
+        <div class="company">
+          <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Career</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <div class="shop">
+          <ul>
+            <li>Shop</li>
+            <li>All Products</li>
+            <li>Categories</li>
+            <li>Deals</li>
+            <li>New Arrivals</li>
+          </ul>
+        </div>
+        <div class="help">
+          <ul>
+            <li>Help</li>
+            <li>FAQ</li>
+            <li>Shipping</li>
+            <li>Returns</li>
+            <li>Track Order</li>
+          </ul>
+        </div>
+        <div class="legal">
+          <ul>
+            <li>Legal</li>
+            <li>Privacy Policy</li>
+            <li>Terms of Use</li>
+            <li>Refund Policy</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/js/products.js"></script>
+  </body>
+</html>
