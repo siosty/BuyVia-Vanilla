@@ -2142,4 +2142,7 @@ input[type="checkbox"]:checked::before {
   .shopContainer {
     padding: 0 10px 10px;
   }
+  .promo {
+    flex-wrap: wrap;
+  }
 }
